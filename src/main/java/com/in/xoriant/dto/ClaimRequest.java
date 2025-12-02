@@ -1,4 +1,5 @@
 package com.in.xoriant.dto;
+import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,6 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor 
 @Builder
 public class ClaimRequest {
+	@Column(nullable = false)
     private Long userId;
 }
 
