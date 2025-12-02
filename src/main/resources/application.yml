@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: approval-service
+
+  datasource:
+    url: jdbc:h2:mem:aprdb;DB_CLOSE_DELAY=-1;MODE=MySQL
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8090
